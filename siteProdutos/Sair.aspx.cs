@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace siteProdutos
 {
-    public partial class Master : System.Web.UI.MasterPage
+    public partial class Sair : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string nome = (string)Session["Nome"];
-            txtNome.Text = $"Bem vindo {nome}!";
+            Session.Abandon();
+            FormsAuthentication.SignOut();
+            Response.Redirect("Default.aspx");
         }
     }
 }

@@ -108,12 +108,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Default.aspx" />
     <Content Include="DetalhesUser.aspx" />
     <Content Include="EditarUser.aspx" />
     <Content Include="img\logo.png" />
     <Content Include="InserirUser.aspx" />
     <Content Include="ListarUser.aspx" />
     <Content Include="RemoverUser.aspx" />
+    <Content Include="Sair.aspx" />
+    <Content Include="Style.css" />
     <Content Include="Visualizar.aspx" />
     <Content Include="Editar.aspx" />
     <Content Include="Global.asax" />
@@ -225,6 +228,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexao.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DetalhesUser.aspx.cs">
       <DependentUpon>DetalhesUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -259,6 +269,13 @@
     </Compile>
     <Compile Include="RemoverUser.aspx.designer.cs">
       <DependentUpon>RemoverUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sair.aspx.cs">
+      <DependentUpon>Sair.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sair.aspx.designer.cs">
+      <DependentUpon>Sair.aspx</DependentUpon>
     </Compile>
     <Compile Include="Visualizar.aspx.cs">
       <DependentUpon>Visualizar.aspx</DependentUpon>

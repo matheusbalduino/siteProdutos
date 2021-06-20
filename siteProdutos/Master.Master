@@ -65,12 +65,12 @@
                         <a class="nav-link" href="InserirUser.aspx">Cadastrar Usuário</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="sair.aspx">Sair</a>
+                        <a class="nav-link" href="Sair.aspx">Sair</a>
                     </li>
                 </ul>
-                <div>
+                <div style="text-align:center;">
                     <strong>
-                        <asp:Label ID="txtNome" runat="server" CssClass="text text-info"></asp:Label>
+                        <asp:Label ID="txtNome" runat="server" CssClass="text text-primary"></asp:Label>
                     </strong>
                 </div>
             </div>

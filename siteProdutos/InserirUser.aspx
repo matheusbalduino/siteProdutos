@@ -73,12 +73,12 @@
     </div>
     <div class="row" style="margin-top: 15px; justify-content: center">
         <div style="text-align: center;">
-            <asp:Button ID="btnSalvar" runat="server" Text="Enviar" CssClass="btn btn-primary" Style="margin-top: 15px;" OnClick="btnSalvar_Click" />
             <a href="ListarUser.aspx" class="btn btn-success" style="margin-top: 15px; margin-left: 10px;">Voltar</a>
+            <asp:Button ID="btnSalvar" runat="server" Text="Enviar" CssClass="btn btn-primary" Style="margin-top: 15px;" OnClick="btnSalvar_Click" />
         </div>
     </div>
     <div class="row" style="margin-top: 15px; justify-content: center;">
-        <div class="col-md-6">
+        <div style="text-align: center;">
             <asp:Label ID="lblResult" runat="server"></asp:Label>
         </div>
     </div>
