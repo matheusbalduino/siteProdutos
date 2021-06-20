@@ -9,34 +9,31 @@ using System.Web.UI.WebControls;
 
 namespace siteProdutos
 {
-    public partial class Listar : System.Web.UI.Page
+    public partial class ListarUser : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            carregarProducts();
-
+            loadUsers();
         }
 
-        private void carregarProducts()
+        private void loadUsers()
         {
-            string query = @"select * from product";
+            string query = @"select * from users";
             DataTable dt = new DataTable();
-
             try
             {
                 MySqlCommand cmd = new MySqlCommand();
 
-                MySqlDataAdapter da = new MySqlDataAdapter(query, Conexao.Connection);
-                da.Fill(dt);
-                
-                rptProducts.DataSource = dt;
-                rptProducts.DataBind();
+                MySqlDataAdapter dados = new MySqlDataAdapter(query, cmd.Connection = Conexao.Connection);
+                dados.Fill(dt);
+
+                rptUsers.DataSource = dt;
+                rptUsers.DataBind();
             }
             catch(Exception ex)
             {
                 lblMsg.Text = $"Error: {ex.Message}";
             }
-            
         }
     }
 }

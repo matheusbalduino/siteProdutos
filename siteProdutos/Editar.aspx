@@ -10,7 +10,7 @@
     <div class="row" style="margin-top: 30px; justify-content: center">
         <div class="col-md-6">
             <label>Imagem:</label>
-            <asp:Image ID="imgProduto" runat="server" Width="635" />
+            <asp:Image ID="imgProduto" runat="server" Width="100%" Style="border-radius:6px;" />
         </div>
     </div>
      <div class="row" style="margin-top: 30px; justify-content: center">

@@ -47,7 +47,8 @@
                         <h5 class="card-title"><%# DataBinder.Eval(Container.DataItem, "pd_nome") %></h5>
                         <p class="card-text"><%# DataBinder.Eval(Container.DataItem, "pd_desc") %></p>
                         <h5 class="card-title">Preço: <%# DataBinder.Eval(Container.DataItem, "pd_price") %></h5>
-                        <a href="<%# Eval("pd_id", "Editar.aspx?id={0}") %>" class="btn btn-primary"> Selecionar </a>
+                        <a href="<%# Eval("pd_id", "Editar.aspx?id={0}") %>" class="btn btn-primary"> Editar </a>
+                        <a href="<%# Eval("pd_id", "Visualizar.aspx?id={0}") %>" class="btn btn-success"> Ver </a>
                     </div>
                 </div>
 

@@ -108,9 +108,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="DetalhesUser.aspx" />
+    <Content Include="EditarUser.aspx" />
+    <Content Include="img\logo.png" />
+    <Content Include="InserirUser.aspx" />
+    <Content Include="ListarUser.aspx" />
+    <Content Include="RemoverUser.aspx" />
+    <Content Include="Visualizar.aspx" />
     <Content Include="Editar.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="img\logo.jpg" />
     <Content Include="Inserir.aspx" />
     <Content Include="Listar.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -219,6 +225,48 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexao.cs" />
+    <Compile Include="DetalhesUser.aspx.cs">
+      <DependentUpon>DetalhesUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalhesUser.aspx.designer.cs">
+      <DependentUpon>DetalhesUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarUser.aspx.cs">
+      <DependentUpon>EditarUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarUser.aspx.designer.cs">
+      <DependentUpon>EditarUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InserirUser.aspx.cs">
+      <DependentUpon>InserirUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InserirUser.aspx.designer.cs">
+      <DependentUpon>InserirUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListarUser.aspx.cs">
+      <DependentUpon>ListarUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListarUser.aspx.designer.cs">
+      <DependentUpon>ListarUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemoverUser.aspx.cs">
+      <DependentUpon>RemoverUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemoverUser.aspx.designer.cs">
+      <DependentUpon>RemoverUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizar.aspx.cs">
+      <DependentUpon>Visualizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Visualizar.aspx.designer.cs">
+      <DependentUpon>Visualizar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Editar.aspx.cs">
       <DependentUpon>Editar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
