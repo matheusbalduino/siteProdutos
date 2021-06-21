@@ -1,4 +1,7 @@
-﻿create database sitetrab;
+﻿// ESTE BANCO POSSUI RELACIONAMENTO DE BD, PARA CADA USUÁRIO PODER TER SEUS PRÓPRIOS
+// PRODUTOS EXIBIDOS EM SUA PRÓPRIA PÁGINA. CADA USUÁRIO TERIA SUA PRÓPRIA LOJA.
+
+create database sitetrab;
 use sitetrab;
 
 create table users(
