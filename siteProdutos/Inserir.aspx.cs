@@ -18,7 +18,7 @@ namespace siteProdutos
         protected void btnImg_Click(object sender, EventArgs e)
         {
             MySqlCommand cmd = new MySqlCommand();
-
+            int id = (int)Session["id"];
             try
             {
                 //captura a file extension, mas não precisou ser usado.
@@ -30,11 +30,12 @@ namespace siteProdutos
                 //faz o tratamento da string para substituir , por . e salvar no banco.
                 string price = txtPrice.Text.Replace(",", ".");
                 cmd.Connection = Conexao.Connection;
-                cmd.CommandText = @"insert into product (pd_nome, pd_image, pd_desc, pd_price) values (@nome, @image, @description, @price)";
+                cmd.CommandText = @"insert into product (pd_nome, pd_image, pd_desc, pd_price, user_id) values (@nome, @image, @description, @price, @idUser)";
                 cmd.Parameters.AddWithValue("@nome", txtNome.Text);
                 cmd.Parameters.AddWithValue("@image", img);
                 cmd.Parameters.AddWithValue("@description", txtDescription.Text);
                 cmd.Parameters.AddWithValue("@price", price);
+                cmd.Parameters.AddWithValue("@idUser", id);
 
                 Conexao.Conectar();
 

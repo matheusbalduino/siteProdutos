@@ -19,12 +19,14 @@ namespace siteProdutos
 
         private void carregarProducts()
         {
-            string query = @"select * from product";
+            int id = (int)Session["id"];
+
             DataTable dt = new DataTable();
 
             try
             {
                 MySqlCommand cmd = new MySqlCommand();
+                string query = $"select * from product where user_id = {id}";
 
                 MySqlDataAdapter da = new MySqlDataAdapter(query, Conexao.Connection);
                 da.Fill(dt);

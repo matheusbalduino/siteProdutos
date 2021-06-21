@@ -46,7 +46,7 @@ namespace siteProdutos
                 if (BCrypt.Net.BCrypt.Verify(senha, senhaEncriptada))
                 {
 
-                    cmd.CommandText = @"select  user_nome, user_nivel from users where user_email = @email";
+                    cmd.CommandText = @"select  user_nome, user_nivel, user_id from users where user_email = @email";
 
                     cmd.Parameters.AddWithValue("@email", usuario);
 
@@ -56,11 +56,13 @@ namespace siteProdutos
 
                     string nivel = reader.GetString("user_nivel");
                     string nome = reader.GetString("user_nome");
+                    int id = reader.GetInt32("user_id");
 
                     FormsAuthentication.RedirectFromLoginPage(nivel, false);
 
                     Session["Perfil"] = nivel;
                     Session["Nome"] = nome;
+                    Session["id"] = id;
                 }
                 else
                 {

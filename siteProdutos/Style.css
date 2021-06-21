@@ -1,5 +1,5 @@
 ﻿.wrapper {
-    margin-top: 250px;
+    margin-top: 150px;
     margin-bottom: 20px;
 }
 
@@ -13,9 +13,9 @@
 }
 
 body {
-    background-image: url(https://www.freecodecamp.org/news/content/images/size/w2000/2020/04/w-qjCHPZbeXCQ-unsplash.jpg);
+    background-image: url(https://i.stack.imgur.com/XrgL6.jpg);
     background-repeat: no-repeat;
-    width: 100%;
+    background-size:100%;
 }
 
 #btnLogin {
