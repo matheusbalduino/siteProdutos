@@ -114,6 +114,7 @@
     <Content Include="img\logo.png" />
     <Content Include="InserirUser.aspx" />
     <Content Include="ListarUser.aspx" />
+    <Content Include="README.txt" />
     <Content Include="RemoverUser.aspx" />
     <Content Include="Sair.aspx" />
     <Content Include="Style.css" />
